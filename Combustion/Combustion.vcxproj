@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{8291042a-94f9-404e-bc4e-a63dfa80f333}</ProjectGuid>
+    <RootNamespace>Combustion</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\Wrappers\ConstantBuffers\UploadBuffer;D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\Wrappers\TextureResource;D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\Wrappers\LightManager;D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\Wrappers\Light;D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\Wrappers\DescriptorHeap;D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\Wrappers\ConstantBuffers;D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\Wrappers\CommandQueue;D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\Wrappers\Camera;D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\Utilities\FileReader;D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\Utilities;D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\Meshes;D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\Core\WindowManager;D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\Core\Window;D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\Core;D:\Programme\FH\Cuda\Combustion\Combustion\Combustion;D:\Programme\FH\Cuda\Combustion\Combustion\DirectXTex;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\inc;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\Wrappers\ConstantBuffers\UploadBuffer;D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\Wrappers\TextureResource;D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\Wrappers\LightManager;D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\Wrappers\Light;D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\Wrappers\DescriptorHeap;D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\Wrappers\ConstantBuffers;D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\Wrappers\CommandQueue;D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\Wrappers\Camera;D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\Utilities\FileReader;D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\Utilities;D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\Meshes;D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\Core\WindowManager;D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\Core\Window;D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\Core;D:\Programme\FH\Cuda\Combustion\Combustion\Combustion;D:\Programme\FH\Cuda\Combustion\Combustion\DirectXTex;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Programme\FH\Cuda\Combustion\Combustion\Combustion\inc;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)inc\DirectXTex-master\DirectXTex;$(ProjectDir)inc\WICTextureLoader;$(ProjectDir)inc;$(ProjectDir);$(ProjectDir)Wrappers\TextureResource;$(ProjectDir)Wrappers\ConstantBuffers\UploadBuffer;$(ProjectDir)Wrappers\LightManager;$(ProjectDir)Wrappers\Light;$(ProjectDir)Wrappers\DescriptorHeap;$(ProjectDir)Wrappers\ConstantBuffers;$(ProjectDir)Wrappers\CommandQueue;$(ProjectDir)Wrappers\Camera;$(ProjectDir)Utilities\FileReader;$(ProjectDir)Utilities;$(ProjectDir)Meshes;$(ProjectDir)Core\WindowManager;$(ProjectDir)Core\Window;$(ProjectDir)Core;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)inc;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>MSVCRTD.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;d3d12.lib;dxgi.lib;d3dcompiler.lib;dxguid.lib;Shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>MSVCRTD.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;d3d12.lib;dxgi.lib;d3dcompiler.lib;dxguid.lib;Shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>MSVCRTD.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;d3d12.lib;dxgi.lib;d3dcompiler.lib;dxguid.lib;Shlwapi.lib;DirectXTex.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CCubeMap.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
+    <ClCompile Include="Core\Combustion.cpp" />
+    <ClCompile Include="Core\Program.cpp" />
+    <ClCompile Include="Core\WindowManager\WindowManager.cpp" />
+    <ClCompile Include="Core\Window\Window.cpp" />
+    <ClCompile Include="EntryPoint.cpp" />
+    <ClCompile Include="Meshes\Mesh3D.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="ShaderResource.cpp" />
+    <ClCompile Include="Shape.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TextureReader.cpp" />
+    <ClCompile Include="Utilities\FileReader\ObjReader.cpp" />
+    <ClCompile Include="Wrappers\Camera\Camera.cpp" />
+    <ClCompile Include="Wrappers\CommandQueue\CommandQueue.cpp" />
+    <ClCompile Include="Wrappers\ConstantBuffers\UploadBuffer\CUploadBuffer.cpp" />
+    <ClCompile Include="Wrappers\DescriptorHeap\CDescriptorHeap.cpp" />
+    <ClCompile Include="Wrappers\LightManager\LightManager.cpp" />
+    <ClCompile Include="Wrappers\TextureResource\TextureResource.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CCubeMap.h" />
+    <ClInclude Include="TextureManager.h" />
+    <ClInclude Include="Core\Combustion.h" />
+    <ClInclude Include="Core\Program.h" />
+    <ClInclude Include="Core\WindowManager\WindowManager.h" />
+    <ClInclude Include="Core\Window\Window.h" />
+    <ClInclude Include="d3dx12.h" />
+    <ClInclude Include="Helpers.h" />
+    <ClInclude Include="HighResClock.h" />
+    <ClInclude Include="Meshes\Mesh3D.h" />
+    <ClInclude Include="Meshes\VertexStructs.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="ShaderResource.h" />
+    <ClInclude Include="Shape.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TextureReader.h" />
+    <ClInclude Include="Utilities\ArcBall.h" />
+    <ClInclude Include="Utilities\FileReader\ObjReader.h" />
+    <ClInclude Include="Wrappers\Camera\Camera.h" />
+    <ClInclude Include="Wrappers\CommandQueue\CommandQueue.h" />
+    <ClInclude Include="Wrappers\ConstantBuffers\UploadBuffer\CUploadBuffer.h" />
+    <ClInclude Include="Wrappers\DescriptorHeap\CDescriptorHeap.h" />
+    <ClInclude Include="Wrappers\LightManager\LightManager.h" />
+    <ClInclude Include="Wrappers\Light\Light.h" />
+    <ClInclude Include="Wrappers\TextureResource\TextureResource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Shaders\PixelShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Shaders\VertexShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+    </FxCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
